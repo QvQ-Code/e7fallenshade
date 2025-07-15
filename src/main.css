@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* Custom */
+.info-hover {
+    overflow: hidden;
+    margin-top: 3px;
+    display: block;
+}
+
+.trait-special .info-hover {
+    color: #b69474 !important;
+}
+
+.trait-buff .info-hover {
+    color: #86c4f3 !important;
+}
+
+.trait-debuff .info-hover {
+    color: #f78680 !important;
+}
+
+.special-trait {
+    margin-right: 4px !important;
+}
+.trait-special,
+.special-trait {
+    background-color: #37241D;
+    display: flex;
+    align-items: center;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.trait-special img {
+    display: none !important;
+}
+
+.trait-buff {
+    background-color: #1F4468;
+    display: block;
+    flex-direction: column !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.trait-debuff {
+    background-color: #701F1E;
+    display: block;
+    color: white !important;
+    font-weight: bold;
+}
+
+.trait:hover .inner {
+    display: block;
+}
+
+.inner {
+    display: none;
+    transition: .2s ease-in-out;
+}
+
+.box-special {
+    height: 40px;
+    padding: 0 calc(.25rem * 2);
+}
+
+.active {
+    border: 1px solid yellow;
+}
